@@ -1,0 +1,22 @@
+/*let newBtn = document.createElement('button');
+newBtn.id = 'btnId';*/
+
+const btn = document.createElement('button');
+const node = document.createTextNode('Click me');
+btn.appendChild(node);
+
+const element = document.getElementById('div1');
+element.appendChild(btn);
+
+element.style.textAlign = 'center';
+
+/*btn.addEventListener('click', changeBackground);
+
+const changeBackground = (e) => {
+    e.btn.style.color = 'red';
+
+}*/
+btn.onclick = 'runColors()';
+function runColors(color) {
+    document.body.style.background = color;
+}
